@@ -10,6 +10,12 @@ import { NestedParentComponent } from './nested-component/parent.component';
 import { NestedChildComponent } from './nested-component/child.component';
 import { NestedGrandsonComponent } from './nested-component/grandson.component';
 
+import { ParentToChildInputComponent } from './parent-to-child-input/parent-to-child-input.component';
+import { ChildInputComponent } from './parent-to-child-input/child-input.component';
+
+import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
+import { ChildComponent } from './child-to-parent/child.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +23,13 @@ import { NestedGrandsonComponent } from './nested-component/grandson.component';
 
     NestedParentComponent,
     NestedChildComponent,
-    NestedGrandsonComponent
+    NestedGrandsonComponent,
+
+    ParentToChildInputComponent,
+    ChildInputComponent,
+
+    ChildToParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +41,11 @@ import { NestedGrandsonComponent } from './nested-component/grandson.component';
     AppComponent,
     HelloComponent,
 
-    NestedParentComponent
+    NestedParentComponent,
+
+    ParentToChildInputComponent,
+
+    ChildToParentComponent
   ]
 })
 export class AppModule { }
